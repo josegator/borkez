@@ -9,13 +9,15 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Jose Bohorquez" %></title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <%= stylesheet_link_tag "normalize", "all" %>
-    <%= javascript_include_tag  "all" %>
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+    
+    <%= stylesheet_link_tag "normalize", "all", "bootstrap.min", "bootstrap-theme.min" %>
+  
+    <%= javascript_include_tag  "all", "bootstrap.min", "jquery.min" %>
   </head>
 
   <body class="<%= page_classes %>">
     <%= yield %>
-    
+
   </body>
 </html>

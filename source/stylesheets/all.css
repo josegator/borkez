@@ -1,5 +1,11 @@
-/*@charset "utf-8";
+@charset "utf-8";
 
+.box {
+/*  border: 1px solid grey; 
+  background-color: #d3d3d3; */
+}
+
+/*
 body {
   background: #d4d4d4 url("../images/background.png");
   text-align: center;
